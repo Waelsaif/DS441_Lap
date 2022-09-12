@@ -4,6 +4,7 @@ import javax.annotation.processing.SupportedOptions;
 
 public class Quiz {
     public static void main(String[] args) {
+        while(true){
         System.out.println("How many questions? ");
         Scanner scan = new Scanner(System.in);
         int numofqs=scan.nextInt();
@@ -24,7 +25,20 @@ public class Quiz {
             }
         }
         System.out.println("You got "+num +" / "+numofqs);
-        System.out.println("Your percent is %"+((num/numofqs)*100));
+        double sum=(num/(double)numofqs)*100;
+        System.out.println("Your percent is %"+Math.round(sum));
+
+        System.out.println("Grade another quiz?\nYes/No?");
+        Scanner input = new Scanner(System.in);
+        Boolean yn=input.nextBoolean();
+        if (yn==false){
+            break;
+        }
+        } 
+        
+    
+    
+
         
         
     }
