@@ -1,6 +1,5 @@
 import java.util.*;
 
-import javax.annotation.processing.SupportedOptions;
 
 public class Quiz {
     public static void main(String[] args) {
@@ -34,12 +33,12 @@ public class Quiz {
         if (yn==false){
             break;
         }
+        scan.close();
+        input.close();
+        in.close();
+        sc.close();
         } 
-        
     
-    
-
-        
         
     }
 }
