@@ -13,7 +13,7 @@ public class Quiz {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the key for the questions ");
         for (int i=0;i<numofqs;i++){
-            arr[i]=sc.nextInt(); // the ans from the user
+            arr[i]=sc.nextInt(); // the keys from the user
         }
         Scanner in = new Scanner(System.in);
         int num =0;
