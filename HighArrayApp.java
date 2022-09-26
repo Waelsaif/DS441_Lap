@@ -18,24 +18,26 @@ class HighArrayApp
       arr.insert(33);
       arr.insert(55);
 
+
+      arr.addFirst(7); // insert element at the beginning
       arr.display();                // display items
+      System.out.println(arr.removeFirst()); 
 
-      int searchKey = 35;           // search for item
-      if( arr.find(searchKey) )
-         System.out.println("Found " + searchKey);
-      else
-         System.out.println("Can't find " + searchKey);
+      arr.display(); // display items 
+
+
+      // int searchKey = 35;           // search for item
+      // if( arr.find(searchKey) )
+      //    System.out.println("Found " + searchKey);
+      // else
+      //    System.out.println("Can't find " + searchKey);
     
-
-      System.out.println("the max is "+arr.maxIndex());
-
       //arr.delete(00);               // delete 3 items
       //arr.delete(55);
       //arr.delete(99);
 
-      arr.display();                // display items again
-
-
+      //arr.display();                // display items again
+      
       }  // end main()
    }  // end class HighArrayApp
 

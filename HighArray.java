@@ -132,6 +132,46 @@ int minIndex() {
 }
 
  //----------------------------------------------------------------//
+long range(){
+return max()-min();
+}
+
+ //----------------------------------------------------------------//
+long sum(){
+long sum=0;
+for (int i=0; i<nElems; i++){
+   sum += a[i];
+}
+return sum;
+}
+
+//----------------------------------------------------------------/
+void addFirst(long value){
+nElems++;
+int s=0;
+long[] lis = new long[nElems];
+   for (int i = 1; i < nElems; i++) {
+            lis[i] = a[s];
+            s++;
+        }
+        lis[0] = value;
+        a = lis;
+}
+
+//----------------------------------------------------------------//
+long removeFirst(){
+   nElems--;
+   long temp = a[0];
+   for(int i=0; i<nElems; i++){
+      a[i]=a[i+1];
+   }
+return temp;
+}
+//----------------------------------------------------------------//
+double avg(){
+return sum()/nElems;
+}
+//----------------------------------------------------------------//
 
  int findAll(int foundElement){
     int count=0;
