@@ -72,7 +72,6 @@ public class IntegerList {
         int indexOfVal;
         int z = 0;
         for (int i = 0; i < list.length; i++) {
-            
             if (list[i] == val) {
                 indexOfVal = i;
                 z++;
@@ -83,7 +82,6 @@ public class IntegerList {
                 list[list.length - z] = 0;
                 currentSize--;
             }
-            
 
         }
     }
