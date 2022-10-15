@@ -7,34 +7,22 @@ import java.util.*;
 
 public class HW1 {
     public static void main(String[] args) {
-        int[] k = { 2, 3, 4, 9, 3, 2 };
+        int[] k = { 2, 3, 4, 9, 10, 12 };
         int[] e = { 3, 4, 2, 5, 9 };
         HW1 s = new HW1();
         boolean result1 = s.isSorted(k);
-        int result2 = s.minimum(k);
-        double result3 = s.mean(k);
-        int[] result4 = s.withoutDuplicates(k);
-        int[] result6 = s.concatenate(k, e);
-        int[] result7 = s.shuffle(e);
         System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
-        System.out.println(Arrays.toString(result4));
-        s.reverse(k);
-        System.out.println(Arrays.toString(result6));
-        System.out.println(Arrays.toString(result7));
+        
 
     }
 
     public boolean isSorted(int[] a) {
-        boolean s = true;
         for (int i = 0; i < a.length - 1; i++) {
             if (a[i] > a[i + 1]) {
-                s = false;
-                break;
+                return false;
             }
         }
-        return s;
+        return true;
     }
 
     public int minimum(int[] a) {
