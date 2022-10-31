@@ -23,7 +23,7 @@ public class DigitPlay {
     if (sumDigits(num)%7==0)
         System.out.println("OK");
     else
-        System.out.println("Erorr");
+        System.out.println("Error");
 
     System.out.println();
     scan.close();
